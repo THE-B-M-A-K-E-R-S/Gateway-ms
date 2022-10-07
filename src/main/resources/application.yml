@@ -15,3 +15,5 @@ zuul:
   routes:
     authentication-ms:
       url: http://localhost:8081
+    project-ms:
+      url: http://localhost:8082
