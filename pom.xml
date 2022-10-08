@@ -9,9 +9,9 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.THE-B-M-A-K-E-S</groupId>
-    <artifactId>Gateway</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
-    <name>Gateway</name>
+    <artifactId>gateway-ms</artifactId>
+    <version>1</version>
+    <name>gateway-ms</name>
     <description>Gateway</description>
     <properties>
         <java.version>1.8</java.version>
@@ -49,6 +49,7 @@
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
             <version>2.1.0.RELEASE</version>
         </dependency>
+
     </dependencies>
 
     <dependencyManagement>
@@ -64,6 +65,7 @@
     </dependencyManagement>
 
     <build>
+        <finalName>gateway-ms</finalName>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
