@@ -6,8 +6,8 @@ spring:
 eureka:
   client:
     service-url:
-#      defaultZone: http://localhost:8761/eureka/
-      defaultZone: http://172.17.0.2:8761/eureka/
+      defaultZone: http://localhost:8761/eureka/
+#      defaultZone: http://172.17.0.2:8761/eureka/
     fetch-registry: true
     register-with-eureka: true
   instance:
@@ -16,14 +16,19 @@ eureka:
 zuul:
   routes:
     authentication-ms:
-#      url: http://localhost:8081
-      url: http://172.17.0.4:8081
+      url: http://localhost:8081
+#      url: http://172.17.0.4:8081
       path: /auth-ms/**
     project-ms:
-#      url: http://localhost:8082
-      url: http://172.17.0.5:8082
+      url: http://localhost:8082
+#      url: http://172.17.0.5:8082
       path: /project-ms/**
-
+    task-ms:
+      url: http://localhost:8083
+      path: /task-ms/**
+    notifs-ms:
+      url: http://localhost:8084
+      path: /notifs-ms/**
 
 
 logging:
