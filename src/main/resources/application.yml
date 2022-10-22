@@ -31,6 +31,9 @@ zuul:
 #      url: http://localhost:8084
       url: http://172.17.0.7:8084
       path: /notifs-ms/**
+    upload-ms:
+      url: http://localhost:8085
+      path: /upload-ms/**
 
 
 logging:
