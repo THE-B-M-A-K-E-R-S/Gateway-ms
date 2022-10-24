@@ -7,6 +7,7 @@ eureka:
   client:
     service-url:
       defaultZone: http://172.20.0.10:8761/eureka/
+#      defaultZone: http://localhost:8761/eureka/
     fetch-registry: true
     register-with-eureka: true
   instance:
@@ -16,15 +17,18 @@ zuul:
   routes:
     authentication-ms:
       url: http://172.20.0.30:8081
+#      url: http://localhost:8081
       path: /auth-ms/**
     project-ms:
       url: http://172.20.0.40:8082
+#      url: http://localhost:8082
       path: /project-ms/**
     task-ms:
       url: http://172.20.0.50:8083
       path: /task-ms/**
     notifs-ms:
       url: http://172.20.0.60:8084
+#      url: http://localhost:8084
       path: /notifs-ms/**
     upload-ms:
       url: http://172.20.0.70:8084
