@@ -33,7 +33,9 @@ zuul:
     upload-ms:
       url: http://172.20.0.70:8085
       path: /upload-ms/**
-
+    request-ms:
+      url: http://localhost:8086
+      path: /request-ms/**
 
 logging:
   level:
